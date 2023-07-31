@@ -31,11 +31,36 @@
 // Symbol=unique
 
 // Object
-let a='sanu'
+// let a='sanu'
 // console.log(typeof a )
-console.log(typeof null)
-console.log(typeof undefined)
+// console.log(typeof null)
+// console.log(typeof undefined)
 
+                //  conversion 
+                // ------------
+// let score =33
+
+
+
+// let isnumber='33'
+// let number=undefined
+// let number =null
+// let number=true;false 
+// let number='' False after conversion
+// let number='sanu' True after conversion
+// console.log(typeof NaN) => undefined
+
+
+// let data =Number(number)
+// console.log(data)
+
+
+// console.log(typeof number)
+// this is all about today section 
+
+
+let data =alert('sanu')
+console.log(data)
 
 
 
