@@ -103,6 +103,35 @@
 // console.log(a-) wrong
 
 
+//        Comparison of datatypes in javascript
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+// console.log(2>3)
+// console.log(2>=3)
+// console.log(2<3)
+// console.log('2'<=3)
+// console.log(null>3)
+
+
+// console.log(null>3)
+// console.log(null==3)
+// console.log(null>=3)
+// console.log(null<=3)
+
+// console.log(undefined>3)
+// console.log(typeof undefined)
+// console.log(undefined==3)
+// console.log(undefined>=3)
+// console.log(undefined<=3)
+
+// strict comparision
+// let a=2
+// let b='2'
+// console.log(a===b) //it will strictctly check the data type and value
+// console.log(a==b)  //but is not gonaa check the datatypes
+
+
 
 
 
