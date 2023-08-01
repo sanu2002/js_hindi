@@ -131,6 +131,53 @@
 // console.log(a===b) //it will strictctly check the data type and value
 // console.log(a==b)  //but is not gonaa check the datatypes
 
+        //     summary
+// ++++++++++++++++++++++++++++++++++++++++++++++
+
+
+// so in js what are the datatypes available
+
+// primitive-String,Boolean,NULL,undefined,Symbol,BigInt,Number
+
+// ex->
+// let a =100
+// let b='100'
+// // type conversion let b='100'
+// let conver=Number(b)
+// console.log(a==b)
+// console.log(a===b)
+
+// let c=true
+// let d=null
+// let e=undefined
+// let g=Symbol('123')
+// let h=Symbol('123')
+
+// console.log(e===h)
+// console.log(a,b,c,d,e,g)
+
+
+
+
+// non-primitive
+// Array,Object,function
+// data=['sanu','salu','sibani','sima','maa','bapa']
+// console.log(typeof data)
+// console.log(data[0])
+
+// object={
+//         name:'sanu',
+//         palce:'angul'
+// }
+// console.log( typeof object)
+
+
+// let my_creation=function(){
+        // console.log('my name is sanu')
+// }
+// console.log(typeof my_creation)
+// console.log(typeof '')
+
 
 
 
