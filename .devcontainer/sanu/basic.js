@@ -59,8 +59,28 @@
 // this is all about today section 
 
 
-let data =alert('sanu')
-console.log(data)
+// let data =alert('sanu')
+// console.log(data)
+
+
+// practise
+
+// let a=undefined NaN
+// let a =null =>0
+// let b=false =>0
+// let convert=Number(a)
+// console.log(convert)
+// console.log(typeof convert)
+
+
+
+                //   String
+        //  ________________________
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// in this section we are going to learn the concept of string in the js so lets get started 
+
+
 
 
 
