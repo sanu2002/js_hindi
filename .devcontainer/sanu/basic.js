@@ -83,6 +83,30 @@
 
 
 
+        //   why string conversion is so much confusing
+// _____________________________________________+++++______________ 
+
+// here we will going to discuss about operator and prefix and postprefix
+
+// let a=2
+// let b=3
+//console.log(2+3+'43')
+// console.log('43'+2+3)
+// let a=100
+// console.log(++a)
+// console.log(a--)//
+// console.log(--a)'''
+// console.log(a++)
+// console.log(+a)
+// console.log(-a)
+// console.log(a+) wrong
+// console.log(a-) wrong
+
+
+
+
+
+
 
 
 
