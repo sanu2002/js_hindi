@@ -181,6 +181,13 @@
 
 
 
+//       stacked   and heap (memory allocstion )
+
+
+
+
+
+
 
 
 
