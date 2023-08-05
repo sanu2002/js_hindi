@@ -50,7 +50,7 @@ const time = 2;
 
 // console.log(time/1000/60);
 
-console.log(time/60/);
+// console.log(time/60/);
 // console.log(Math.floor(time*60*3600*(10**3)));
 // console.log(Math.floor(time*60*3600*(10**3)));
 
