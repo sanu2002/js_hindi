@@ -1,6 +1,6 @@
 const  mydata=['iron','thor','superman']
 
-// const myname=['sanu','salu','maa']
+const myname=['sanu','salu','maa']
 
 
 // myname.push(mydata)
@@ -10,7 +10,7 @@ const  mydata=['iron','thor','superman']
 
 // spraed operator---------------
 
-// console.log([...mydata,...myname,])
+console.log([...mydata,...myname,])
 // console.log(typeof mydata);
 
 // THERE IS NO NEED TO REMEBER ALL THE METHOD THAT ARE AVALABLE IN ARRAY 

@@ -146,4 +146,24 @@
 // condition ? true :false
 
 // let a=70
-// a>60 ? console.log('yes'):console.log('no');;
+// // a>60 ? console.log('yes'):console.log('no');;
+
+
+
+// let a =null
+
+// let b=function(){
+//     console.log('this is all about the ');
+
+// }
+
+// coloison=a??b
+// if (coloison==b){
+//     return b()
+
+// }
+
+
+// like this now you have better understanding anout this 
+
+
