@@ -27,6 +27,17 @@ for (let i = 0; i < 20; i++) {
         // continue ??it will skip that particular element /
         
     }
-    console.log(i)
+    // console.log(i)
     
 }
+
+// for (let index = 0; index < array.length; index++) {
+//     const element = array[index];
+    
+// }
+
+for (let index=0; index<10;index++ ){
+    console.log('i am sanu');
+}
+
+
