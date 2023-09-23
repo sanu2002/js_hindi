@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAI AUR CODE ABOUT DOM</title>
+</head>
+<body style="background-color: rgb(37, 35, 35); color:aliceblue; ">
+    <ul class="language">
+        <li>Javascript</li>
+
+    </ul>
+    
+</body>
+
+<script>
+    /*function addlanguage(langname){
+        const li_item=document.createElement('li');
+        li_item.innerHTML=`${langname}`
+        document.querySelector('.language').appendChild(li_item)
+
+         
+    }
+    addlanguage('python')
+    addlanguage('ruby')*/ 
+    
+
+    function addoptimiselanguage(langname){
+        const li_item=document.createElement('li');
+        li.appendChild(document.createTextNode(langname))
+        document.querySelector('.language'.appendChild(li_item))
+
+
+    }
+    addoptimiselanguage('python')
+    addoptimiselanguage('ruby')
+
+    //edit
+    const seclan=document.querySelector('li:nth-child(2)')
+    //seclan.innerHTML='Mojo'
+
+    //second approch/// 
+    const newli=document.createElement('li')
+    newli.textContent='MOJO'
+    seclan.replaceWith(newli)
+
+    //edit
+
+   // const sec=document.querySelector('li:nth-child(1)')
+    //sec.outerHTML='<li>Typescript</li>'
+
+   //remove 
+   const lastlanb=document.querySelector('li')
+   lastlanb.remove()
+
+</script>
+
+<!-- so here is some problem in this function what is that as long as the function get executed it will traverse the 
+entire li and append it into the last which is not a valud solution for 
+this problem but i just want to show you how we can optimise this lets go  -->
+
+</html>

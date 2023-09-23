@@ -1,0 +1,71 @@
+WE NEED TO LEARN DOM BECAUSE AFTER FETCHOING DATA WE NEED TO CHANGE THE  CONTAINER AND SHOW THE APPROPRIATE RRESULT TO THE USER FOR THAT WE NEED TO KNOW THE CONCEPT OF 
+DOM
+
+EVENT HANDLING - WHY THIS IS IMPORTANT BECAUSE ONES YOU KNOW HOW TO MANIPULATE THE DATA WE NEED TO KNOW THE 
+#
+EVENTS THAT ARE TAKING PLACE AND WHAT DO I HAVE TO DO WITH IT? THIS IS 
+BASICALLY TELLES US HOW WE WILL FETCH THE DATA FRON THE SERVER
+
+
+SUPOOSE THINK THAT I AM GOING TO  CRAETE THE 
+APPLICATION FOR A WATHER APP IN THIS CASE 
+I AM NOT GOING TO USE MY OWN ALGORITHM AND 
+OWN METHOD FOR BUILDING THAT SOFTWARE SO WHAT CAN I DO 
+JUST I NEED TO FETCH THE WEATHER API BY FETCH FUNCTION WITH THE EVENET 
+AND THE ACCORDING TO THE REQUIREMENT I AM GOING TO CHANGE MY DOM
+
+
+
+
+___________________________________________________________________________________
+
+note-2 
+remember 2 things wen you are workign with selector then must know these 2 method
+document.getElementById,document.querySelector,document.querySelectorall
+
+
+
+
+
+1. querySelector()
+2. getElementById()
+3. classList
+4. addEventListener(event,function)
+5. removeEventListener(event, function);
+6. innerHTML = "some text";
+7. appendChild();
+8. createElement("div");
+9. createTextNode('text');
+10. parentNode;
+11. childNodes[index];
+12. previousSibling;
+13. nextSibiling;
+14. firstChild;
+15. lastChild;
+16. hasChildNodes();
+17. cloneNode(true/false);
+18. replaceChild(new node , oldnode );
+19. insertBefore( new node , reference node ) ;
+20. removeChild(child node to be removed);
+21. style.propertyname=value;
+22. style.backgroundColor="red"
+23. document.getElementById("id").style.color='blue';
+24. document.getElementsByClassName("class")[i].style.display ="none";
+25. document.getElementsByTagName("tag name")[j] .style.borderColor ='black'
+26. event.preventDefault();
+27. event.stopPropagation();
+28. window.location.href="https://www.google.com/";
+29. console.log(data);
+
+
+
+______________________________________________________________________________________________________
+
+HOW TO CONVERT NODELIST,HTMLLIST TO  
+ARRAY FOR using map and filter and some for loop/
+
+
+ans=>   ARRAY.FROM(NODELIST)
+ans=>   ARRAY.FROM(HTMLLIST)
+
+NOW WE ARE GOING TO MANIPUALTE HTML DATA AND PLAY WITH SOME HTML LETS GO 

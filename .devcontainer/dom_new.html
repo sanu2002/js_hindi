@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color:rgb(40, 37, 37); color:white;">
+    <div class="parent">
+        <!-- this is  a commentn  -->
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thrusday</div>
+    </div>
+    
+
+   
+</body>
+<script>
+    /*let parent = document.querySelector(".parent");
+    console.log(parent.children)
+    console.log(parent.children[1].innerHTML)
+
+    for (let index = 0; index < parent.children.length; index++) {
+         console.log(parent.children[index].innerHTML);
+        
+    }*/
+    
+    /*<!-- parent.children[1].style.color='orange'
+    console.log(parent.firstElementChild)
+    console.log(parent.lastElementChild) -->
+
+    /*c-----------------------------------------*/
+    
+    /*can u get the parent form the children ,because query selecetor one of the expensive task so i want to reduce the use of the query selcetor 
+    */
+
+    let a=document.querySelector('.day')
+    let b=a.parentElement
+    /*console.log(a.parentElement)
+    console.log(a.childElementCount)
+    console.log(a.nextSibling)
+    console.log(a.nextElementSibling)*/a
+
+    console.log('List',b.childNodes)
+
+
+    
+
+   
+    
+    
+</script>
+
+
+</html>
