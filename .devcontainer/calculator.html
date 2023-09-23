@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator for adding 2 numbers</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            background-color: grey;
+           
+
+
+
+        }
+        .conatiner{
+            background-color: rgb(72, 72, 80);
+            display: flex;
+            margin: 200px 500px auto 500px;
+            padding: 23px 23px 23px 23px ;
+            box-shadow: 10px 20px 300px ;
+            
+        }
+        .hero{
+               margin-left: 23px;
+               border: 50px;
+
+        }
+        .btn {
+            align-items: center;
+            appearance: none;
+            background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+            border: 0;
+            border-radius: 6px;
+            box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+            box-sizing: border-box;
+            color: #fff;
+            cursor: pointer;
+            display: inline-flex;
+            font-family: "JetBrains Mono",monospace;
+            height: 28px;
+            justify-content: center;
+            line-height: 1;
+            list-style: none;
+            overflow: hidden;
+            padding-left: 16px;
+            padding-right: 16px;
+            position: relative;
+            text-align: left;
+            text-decoration: none;
+            transition: box-shadow .15s,transform .15s;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            white-space: nowrap;
+            will-change: box-shadow,transform;
+            font-size: 18px;
+          }
+          
+          .btn:focus {
+            box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+          }
+          
+          .btn:hover {
+            box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+            transform: translateY(-2px);
+          }
+          
+          .btn:active {
+            box-shadow: #3c4fe0 0 3px 7px inset;
+            transform: translateY(2px);
+          }
+        
+
+    </style>
+</head>
+<body>
+    <div class="conatiner">
+        <div class="card">  
+        INPUT1:<input class='hero' type="number" placeholder="Input a number "><br><br>
+        INPUT2:<input class='hero' type="number" placeholder="Input a number "><br>
+        <h1 class="head"></h1>
+        <button class="btn" type="button">Calculate</button>
+
+    </div>
+
+    </div>
+
+</body>
+
+<script>
+    let button = document.querySelector('.btn'); // Select the button element
+  
+    button.addEventListener('click', function() {
+      const input1 = parseInt(document.getElementsByClassName('hero')[0].value);
+      const input2 = parseInt(document.getElementsByClassName('hero')[1].value);
+      const h1 = document.querySelector('.head');
+      
+      if (!isNaN(input1) && !isNaN(input2)) { // Check if both inputs are valid numbers
+        h1.innerHTML = `Result: ${input1 + input2}`;
+      } else {
+        h1.innerHTML = 'Please enter valid numbers';
+      }
+    });
+  </script>
+  
+
+</html>
+
+
