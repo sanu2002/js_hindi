@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color-Change-With Js</title>
+    <style>
+        body {
+            background-color: rgb(70, 62, 62);
+        }
+        .container {
+            margin: 250px 250px 250px 450px;
+            display: flex;
+            padding: 20px;
+            width: 200px;
+            height: 200px;
+        }
+        .color-button {
+            padding: 20px;
+            margin: 20px;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+        .id1 {
+            background-color: red;
+        }
+        .id2 {
+            background-color: rgb(51, 0, 255);
+        }
+        .id3 {
+            background-color: rgb(0, 255, 4);
+        }
+        .id4 {
+            background-color: rgb(255, 145, 0);
+        }
+        .id5 {
+            background-color: black;
+        }
+
+        .color-button:hover {
+            transform: scale(1.2);
+        }
+        .tt{
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column; /* Stack items vertically on smaller screens */
+            }
+            .color-button {
+                width: 100%; /* Make buttons take full width on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>  
+    <div class="container">
+        <div class="color-button id1">red</div>
+        <div class="color-button id2">blue</div>
+        <div class="color-button id3">green</div>
+        <div class="color-button id4">orange</div>
+        <div class="color-button id5">black</div>
+    </div>
+
+</header>
+
+
+<section>
+    <h1 class="tt">Can u make my backgroung as black</h1>
+
+</section>
+    
+</body>
+
+<script>
+    let buttons = document.querySelectorAll('.color-button');
+    let body = document.querySelector('body');
+
+    buttons.forEach(function (button) {
+        button.addEventListener('click', function(e) {
+            // Get the background color from the class name
+            let colorClass = e.target.classList[1];
+            body.style.backgroundColor = window.getComputedStyle(document.querySelector(`.${colorClass}`)).backgroundColor;
+        });
+    });
+</script>
+</html>

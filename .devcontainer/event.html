@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html events</title>
+</head>
+<body style="background-color: #414141; color: aliceblue">
+    <h2>Amazing images</h2>
+    <div>
+        <ul id="images">
+            <li><img width="200px" height="150px" id="photoshop" src="https://images.pexels.com/photos/3314294/pexels-photo-3314294.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="photoshoop"></li>
+            <li><img width="200px" height="150px" id="japan" src="https://images.pexels.com/photos/3408353/pexels-photo-3408353.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="photoshoop"></li>
+            <li><img width="200px" height="150px" id="india" src="https://images.pexels.com/photos/6571000/pexels-photo-6571000.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="photoshoop"></li>
+            <li><img width="200px" height="150px" id="uk" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/10/2f/fe/united-kingdom.jpg?w=700&h=500&s=1" alt="photoshoop" onclick="alert('uk')"></li>
+             <!-- you can use onlclick event within html tag but we can use here due to some optimal issue  wen u want to scale your appliacation then you need to use aviod thois type of things  -->
+            <li style="color: aliceblue;"><a href="https://google.com" id="google">Google</a></li>
+        </ul>
+
+    </div>
+
+    
+</body>
+<script>
+    //document.getElementById('india').onclick = function(){
+       // alert('india click')
+    //}
+    //yes also there is some probelm  here that  is nothing but the less features 
+    //attchEvent() -old explorer
+    //jquery-on 
+
+    //document.getElementById('india').addEventListener('click', function(event){ -->
+    //console.log(event)   -->
+    //},false) -->
+
+    //_____----------------event bubling ----------------
+
+
+    //document.getElementById('images').addEventListener('click', function(event){
+    //        console.log('click inside the ul')  
+    //},false)
+
+    //document.getElementById('india').addEventListener('click', function(event){
+    //      console.log(event)  
+    //},false)
+
+    //document.getElementById('japan').addEventListener('click', function(event){
+    //      console.log(event)  
+    //      event.stopPropagation()
+    //      //it will stop the bubbling 
+    //},false)
+
+
+
+    //eventprogation - False,true
+
+    // so wen in addEventListener we mention false by default it is save as false -> so wen you click on 
+    
+        //what is the mean of false eventlistener it will show you from inner to outer 
+    
+        //but wen you are using true then it will capture the event from outer to inner
+
+    
+    
+
+
+
+
+
+    
+    
+
+
+    //---------------------------------------
+
+    //type,timestamp,defaultprevented
+    //target srcElement,CurrentTarget 
+    //clientx,clienty,screenx,screenY 
+    //altkey ,ctrlkey,shiftkey,keycode 
+
+
+    //defaultprevented____________________////******
+    //document.getElementById('google').addEventListener('click',function(e){
+    //    e.preventDefault()
+     //   e.stopPropagation()
+
+    //    console.log('google clicked')
+
+    //}) 
+
+
+     document.querySelector('#images').addEventListener('click', function(event){
+        console.log(event.target.tagName)
+
+        if (event.target.tagName==='IMG'){
+            console.log(event.target.id)
+            
+        let removeit=event.target.parentNode
+        //removeit.remove()
+        removeit.remove()
+
+
+
+        }
+        
+       
+
+
+
+     },false)
+
+
+
+
+    
+</script>
+</html>
