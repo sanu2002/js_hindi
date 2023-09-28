@@ -115,3 +115,87 @@
     
 </script>
 </html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is my event handle practice</title>
+    <style>
+        body{
+            background: #3498db;  /* fallback for old browsers */
+        }
+        .images{
+            display: flex;
+            padding: 20px;
+            margin: 100px;
+
+        }
+        .ddt{
+            border: solid black ;
+            padding: 20px;
+            margin: 20px;
+            box-shadow:  10px 20px 20px;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1 style="color: blue;">So! for understanding these comcept u need a better understanding on dom manupulatio  and have a great knowledger about parent and childnode</h1> -->
+    <ul class="images" style="border: 10px; color: red;">
+        <li style="list-style: none;"><img style="width: 200px; height:200px;" class="ddt"  src="https://images.unsplash.com/photo-1562170824-b547dae88b97?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjEyMDd9" id="india" alt="downloading"></li>
+        <li style="list-style: none;"><img style="width: 200px; height:200px;" class="ddt" src="https://th.bing.com/th/id/R.fd9b4fe1aacb6a07d46cd5b3adcd41e1?rik=S29DokAfAuBuNg&riu=http%3a%2f%2fimages.unsplash.com%2fphoto-1527672809634-04ed36500acd%3fixlib%3drb-1.2.1%26q%3d80%26fm%3djpg%26crop%3dentropy%26cs%3dtinysrgb%26w%3d1080%26fit%3dmax&ehk=K6SVTPsztVzbY9%2b4HkC1oN6z%2bWbBmDFMLY5YgOhQD1E%3d&risl=&pid=ImgRaw&r=0" id="Russia" alt="downloading"></li>
+        <li style="list-style: none;"><img style="width: 200px; height:200px;" class="ddt" src="https://th.bing.com/th/id/R.c88101f99eca0b7f2b900c17359c6fe5?rik=L%2fB0qYxSeV1X%2bw&riu=http%3a%2f%2fimages.unsplash.com%2fphoto-1593217188322-6a547f02ddb5%3fcrop%3dentropy%26cs%3dtinysrgb%26fit%3dmax%26fm%3djpg%26ixid%3dMnwxMjA3fDB8MXxzZWFyY2h8NHx8Zm9yd2FyZHx8MHx8fHwxNjI5MjQ5NzI5%26ixlib%3drb-1.2.1%26q%3d80%26w%3d1080&ehk=cjXFjlQQNT2gX3zeIW%2b8keGX7fbmhPSme3elJVaEn04%3d&risl=&pid=ImgRaw&r=0" id="australia" alt="downloading"></li>
+        <li style="list-style: none;"><img style="width: 200px; height:200px;" class="ddt" src="https://th.bing.com/th/id/OIP.kLWaLBuAYUILIhejPf7nQAHaE8?pid=ImgDet&rs=1" id="London" alt="downloading"></li>
+    </ul>
+    
+    
+</body>
+<script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+
+       /* document.querySelector('.images').addEventListener('click', function(event) {
+            console.log('I am the parent element');
+            event.defaultPrevented()
+            event.stopPropagation()x
+
+            
+        }, true);
+
+        document.getElementById('india').addEventListener('click', function(event) {
+            console.log('I am India');
+            event.defaultPrevented()
+            event.stopPropagation()
+
+        }, true);*/
+
+
+        document.querySelector('.images').addEventListener('click', function(event){
+              let removelement=event.target
+              //console.log(removelement.id)
+              //console.log(removelement)
+
+              if (removelement.id=='india'){
+                  removelement.remove()
+              }
+
+              else{
+                alert('this cant be delted')
+              }
+
+
+        })
+
+    });
+
+
+    //<!-- so one thing remeber in each step  you have to check what element  and value comes from there  -->
+    //then apply all the stufff that you knwo like loop , childnodes and parent nodes and function arrow function and all the data structure 
+    
+</script>
+</html>
