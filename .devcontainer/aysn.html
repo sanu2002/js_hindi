@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(48, 38, 38);">
+
+
+    
+</body>
+<script>
+
+
+   /*function greet(){
+        console.log("Hello, World!"); 
+    }
+    
+    
+    function option(){
+            console.log('hey!') 
+    
+
+    
+    }
+    
+    
+    
+    greet()
+    option() */ 
+
+
+    //.here i am going to show some things about async and non-async 
+
+    /*<!-- async function middle() {
+        for (let index = 0; index < 10; index++) {
+            console.log(index);
+            await new Promise(resolve => setTimeout(resolve, 0)); // Introducing a minimal delay
+        }
+    }
+    
+    async function otherAsyncTask() {
+        console.log("This is another asynchronous task");
+    }
+    
+    async function start() {
+        console.log('begin');
+    }
+    
+    async function end() {
+        console.log('end!');
+    }
+    
+    async function main() {
+        start();
+        await middle(); // Asynchronous loop with minimal delay
+        end();
+        await otherAsyncTask(); // Another asynchronous task
+    }
+    
+    main(); 
+    */
+    
+    
+    /*console.log('i am first')
+
+    setTimeout(()=>{
+        console.log ('i am second')
+    },0
+
+    )
+
+    console.log('i am last')
+
+    //it also act as non blocking code */ 
+
+    /*console.log('i am begin')
+
+    setTimeout(()=>{
+        console.log('i am in the middle')
+    },10
+
+    )
+
+    Promise.resolve('proimise!')
+    .then(res => console.log(res))
+
+
+    console.log('end')
+    */
+
+
+    const f1=()=>{console.log('i am first')}
+
+    const f2=()=>{setTimeout(()=>{
+       // console.log('i am second')
+
+    },1000)}
+
+    const f3=()=>{console.log('i am third')}
+
+    //f1()
+    //f2()
+   // f3()
+
+
+
+    console.log(sum(10,10))
+    console.log(city)
+    console.log(name)
+
+
+    function sum(x,y){
+    return x+y
+     }
+
+   const name='sanu'
+
+   let info={
+    name:'sanu',
+    nationality:'indian'
+   }
+
+   let city ='angul'
+
+
+   //<!-- for  learning hoisting we need to understand the execution flow and how heap and satck Worker -->
+   //<!-- how they stored and take reference that necesaary   -->
+  
+
+
+
+     //<!-- undersatnd the code execution and higer order function in js  -->
+     //<!-- and some good experience in asyn and dom and event can make you a good developer in js  -->
+
+
+
+
+
+
+
+
+
+
+</script>
+</html>
