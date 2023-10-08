@@ -39,4 +39,10 @@
 
 
 
+const url='https://api.github.com/users/sanu2002'
+const req = new XMLHttpRequest();
+           
+
+
+
 
